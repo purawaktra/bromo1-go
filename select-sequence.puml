@@ -1,0 +1,33 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+participant Router
+participant RequestHandler as rh
+participant Controller as ctrl
+participant MiddleWare as mw
+participant UseCase as uc
+participant Repository as repo
+
+Router -> rh : SelectTableAccount(context)
+rh -> ctrl : SelectTableAccount(request)
+ctrl -> mw : BindAndValidate(payload)
+mw --> ctrl : dto, nil
+mw x--> ctrl : nil, error
+ctrl x--> rh : response, error
+rh x--> Router : 400, error response
+ctrl -> uc : SelectAccountById(dto)
+uc -> repo : SelectAccountById(entity)
+ctrl -> uc : SelectAccountByUsername(dto)
+uc -> repo : SelectAccountByUsername(entity)
+ctrl -> uc : SelectAccountByEmail(dto)
+uc -> repo : SelectAccountByEmail(entity)
+repo --> uc : Account, nil
+uc --> ctrl : Account, nil
+ctrl --> rh : response, nil
+rh --> Router : 200, OK response
+repo x--> uc : nil, error
+uc x--> ctrl : nil, error
+ctrl x--> rh : response, error
+rh x--> Router : 400, error response
+
+@enduml

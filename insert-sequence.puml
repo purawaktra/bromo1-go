@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+participant Router
+participant RequestHandler as rh
+participant Controller as ctrl
+participant MiddleWare as mw
+participant UseCase as uc
+participant Repository as repo
+
+Router -> rh : CreateAccount(context)
+rh -> ctrl : CreateAccount(request)
+ctrl -> mw : BindAndValidate(payload)
+mw --> ctrl : dto, nil
+mw x--> ctrl : nil, error
+ctrl x--> rh : response, error
+rh x--> Router : 400, error response
+ctrl -> uc : CreateAccount(dto)
+uc -> repo : CreateAccount(entity)
+repo --> uc : nil
+uc --> ctrl : nil
+ctrl --> rh : response, nil
+rh --> Router : 200, OK response
+repo x--> uc : error
+uc x--> ctrl : error
+ctrl x--> rh : response, error
+rh x--> Router : 400, error response
+
+@enduml
