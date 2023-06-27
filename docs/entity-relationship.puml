@@ -42,9 +42,8 @@ entity "Province" as province {
 }
 
 entity "Credential" as credential {
-    +CredentialID PK_ROW INT
-    +AccountId FK_ROW INT
-    PasswordHash FIELD_ROW VARCHAR
+    +AccountId PK_ROW FK_ROW INT
+    PasswordHash FIELD_ROW TEXT
     Salt FIELD_ROW VARCHAR
 }
 

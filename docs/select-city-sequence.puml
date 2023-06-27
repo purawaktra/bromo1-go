@@ -4,19 +4,23 @@
 participant Router
 participant RequestHandler as rh
 participant Controller as ctrl
-participant MiddleWare as mw
+participant Function as func
 participant UseCase as uc
 participant Repository as repo
 
-Router -> rh : DeleteAccount(context)
-rh -> ctrl : DeleteAccount(request)
-ctrl -> mw : BindAndValidate(payload)
-mw --> ctrl : dto, nil
-mw x--> ctrl : nil, error
+Router -> rh : SelectTableCity(context)
+rh -> ctrl : SelectTableCity(request)
+ctrl -> func : BindAndValidate(payload)
+func --> ctrl : dto, nil
+func x--> ctrl : nil, error
 ctrl x--> rh : response, error
 rh x--> Router : 400, error response
-ctrl -> uc : DeleteAccount(dto)
-uc -> repo : DeleteAccount(entity)
+ctrl -> uc : SelectTableCityById(dto)
+uc -> repo : SelectTableCityById(entity)
+ctrl -> uc : SelectTableCityByName(dto)*
+uc -> repo : SelectTableCityByName(entity)*
+ctrl -> uc : SelectTableCityByProvince(dto)
+uc -> repo : SelectTableCityByProvince(entity)
 repo --> uc : nil
 uc --> ctrl : nil
 ctrl --> rh : response, nil
