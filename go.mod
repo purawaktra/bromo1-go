@@ -1,4 +1,4 @@
-module github.com/purawaktra/bromo1
+module github.com/purawaktra/bromo1-go
 
 go 1.20
 
