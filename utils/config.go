@@ -1,0 +1,86 @@
+package utils
+
+import (
+	"github.com/spf13/viper"
+	"os"
+)
+
+var (
+	AppName        string
+	AppHost        string
+	AppPort        string
+	AppEnvironment string
+	AppLogLevel    string
+
+	AppAuthUsername string
+	AppAuthPassword string
+
+	MongoDBHost     string
+	MongoDBPort     string
+	MongoDBDatabase string
+	MongoDBUser     string
+	MongoDBPassword string
+
+	CollectionProfilePicture string
+)
+
+func InitConfig() {
+	// check app environment on env
+	env := os.Getenv("APP_ENV")
+
+	// check for value
+	if env == "" {
+		env = "development"
+	}
+
+	if env == "development" {
+		// check for config.json
+		viper.SetConfigFile(`config.json`)
+
+		// read file
+		err := viper.ReadInConfig()
+		if err != nil {
+			Fatal(err, "InitConfig", "")
+			panic(err)
+		}
+
+		// get variable for app
+		AppName = viper.GetString("app.name")
+		AppHost = viper.GetString("app.host")
+		AppPort = viper.GetString("app.port")
+		AppEnvironment = viper.GetString("app.environment")
+		AppLogLevel = viper.GetString("app.log.level")
+		AppAuthUsername = viper.GetString("app.auth.username")
+		AppAuthPassword = viper.GetString("app.auth.password")
+
+		// get variable for db
+		MongoDBHost = viper.GetString("database.mongodb.host")
+		MongoDBPort = viper.GetString("database.mongodb.port")
+		MongoDBDatabase = viper.GetString("database.mongodb.database")
+		MongoDBUser = viper.GetString("database.mongodb.user")
+		MongoDBPassword = viper.GetString("database.mongodb.password")
+
+		// get mongodb collection name
+		CollectionProfilePicture = viper.GetString("database.mongodb.collection.profile_picture")
+
+		// create return
+		return
+	}
+
+	if env == "staging" || env == "production" {
+		// get variable for app
+		AppName = os.Getenv("APP_NAME")
+		AppPort = os.Getenv("APP_PORT")
+		AppEnvironment = os.Getenv("APP_ENV")
+		AppLogLevel = os.Getenv("APP_LOG_LEVEL")
+		AppAuthUsername = os.Getenv("APP_AUTH_USERNAME")
+		AppAuthPassword = os.Getenv("APP_AUTH_PASSWORD")
+
+		// get variable for db
+		MongoDBHost = os.Getenv("MYSQL_HOST")
+		MongoDBPort = os.Getenv("MYSQL_PORT")
+		MongoDBDatabase = os.Getenv("MYSQL_SCHEME")
+		MongoDBUser = os.Getenv("MYSQL_USER")
+		MongoDBPassword = os.Getenv("MYSQL_PASSWORD")
+	}
+}

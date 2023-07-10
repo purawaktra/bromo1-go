@@ -1,0 +1,38 @@
+{"time":"2023-07-09 20:11:45","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-09 20:11:46","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-09 20:11:46","message":"App Address = localhost:7718"}
+{"time":"2023-07-09 20:13:17","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-09 20:13:18","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-09 20:13:18","message":"App Address = localhost:7718"}
+{"time":"2023-07-09 20:15:29","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-09 20:15:29","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-09 20:15:29","message":"App Address = localhost:7718"}
+{"level":"warn","function":"CheckBasicAuth","message":"Basic auth not set","time":"2023-07-09 20:15:40"}
+{"level":"warn","function":"CheckBasicAuth","message":"Password given not valid","time":"2023-07-09 20:15:56"}
+{"level":"info","time":"2023-07-09 20:16:18","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-09 20:16:18","message":"=== New Request ==="}
+{"level":"error","error":"invalid document length","function":"StoreProfilePicture","message":"","time":"2023-07-09 20:16:18"}
+{"level":"info","time":"2023-07-09 20:19:00","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-09 20:19:00","message":"=== New Request ==="}
+{"level":"error","error":"invalid document length","function":"StoreProfilePicture","message":"","time":"2023-07-09 20:19:00"}
+{"time":"2023-07-09 20:19:25","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-09 20:19:45","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-09 20:19:45","message":"App Address = localhost:7718"}
+{"level":"info","time":"2023-07-09 20:19:48","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-09 20:19:48","message":"=== New Request ==="}
+{"level":"error","error":"invalid document length","function":"StoreProfilePicture","message":"","time":"2023-07-09 20:19:56"}
+{"level":"info","time":"2023-07-09 20:20:18","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-09 20:20:18","message":"=== New Request ==="}
+{"level":"error","error":"invalid document length","function":"StoreProfilePicture","message":"","time":"2023-07-09 20:21:02"}
+{"time":"2023-07-09 20:23:25","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-09 20:23:25","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-09 20:23:25","message":"App Address = localhost:7718"}
+{"level":"info","time":"2023-07-09 20:23:27","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-09 20:23:27","message":"=== New Request ==="}
+{"level":"error","error":"WriteBinaryWithSubtype can only write while positioned on a Element or Value but is positioned on a TopLevel","function":"StoreProfilePicture","message":"","time":"2023-07-09 20:23:39"}
+{"time":"2023-07-09 21:49:42","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-09 21:49:43","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-09 21:49:43","message":"App Address = localhost:7718"}
+{"time":"2023-07-09 21:50:34","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-09 21:50:35","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-09 21:50:35","message":"App Address = localhost:7718"}

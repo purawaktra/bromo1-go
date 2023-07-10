@@ -1,0 +1,132 @@
+{"time":"2023-07-10 15:52:22","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-10 15:52:23","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-10 15:52:23","message":"App Address = localhost:7718"}
+{"level":"warn","function":"CheckBasicAuth","message":"Basic auth not set","time":"2023-07-10 15:52:39"}
+{"level":"warn","function":"CheckBasicAuth","message":"Basic auth not set","time":"2023-07-10 15:52:48"}
+{"level":"info","time":"2023-07-10 15:53:15","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 15:53:15","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"","Data":null},"time":"2023-07-10 15:53:15"}
+{"level":"error","error":"no encoder found for <nil>","function":"RetrieveProfilePicture","message":null,"time":"2023-07-10 15:53:15"}
+{"level":"error","error":"no encoder found for <nil>","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 15:53:15"}
+{"time":"2023-07-10 15:53:56","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-10 15:53:57","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-10 15:53:57","message":"App Address = localhost:7718"}
+{"level":"info","time":"2023-07-10 15:54:08","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 15:54:08","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"","Data":null},"time":"2023-07-10 15:54:25"}
+{"level":"error","error":"no encoder found for <nil>","function":"RetrieveProfilePicture","message":null,"time":"2023-07-10 15:54:29"}
+{"level":"error","error":"no encoder found for <nil>","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 15:54:34"}
+{"level":"info","time":"2023-07-10 15:55:12","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 15:55:12","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"","Data":null},"time":"2023-07-10 15:55:12"}
+{"level":"error","error":"no encoder found for <nil>","function":"RetrieveProfilePicture","message":null,"time":"2023-07-10 15:55:29"}
+{"level":"error","error":"no encoder found for <nil>","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 15:55:29"}
+{"level":"info","time":"2023-07-10 15:56:17","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 15:56:17","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"","Data":null},"time":"2023-07-10 15:56:20"}
+{"level":"error","error":"no encoder found for <nil>","function":"RetrieveProfilePicture","message":null,"time":"2023-07-10 15:56:39"}
+{"level":"error","error":"no encoder found for <nil>","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 15:56:39"}
+{"time":"2023-07-10 16:02:21","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-10 16:02:22","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-10 16:02:22","message":"App Address = localhost:7718"}
+{"level":"warn","function":"CheckBasicAuth","message":"Basic auth not set","time":"2023-07-10 16:02:39"}
+{"level":"info","time":"2023-07-10 16:03:04","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 16:03:04","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"a1b2c3d4e5","Data":[{"Key":"account_id","Value":"1"},{"Key":"data","Value":"str"},{"Key":"document_id","Value":"1"}]},"time":"2023-07-10 16:03:04"}
+{"level":"error","error":"error decoding key account_id: cannot decode string into an integer type","function":"RetrieveProfilePicture","message":{"DocumentId":"","AccountId":0,"File":null},"time":"2023-07-10 16:03:04"}
+{"level":"error","error":"error decoding key account_id: cannot decode string into an integer type","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 16:03:04"}
+{"level":"info","time":"2023-07-10 16:04:21","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 16:04:21","message":"=== New Request ==="}
+{"level":"error","error":"invalid document length","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 16:04:21"}
+{"time":"2023-07-10 16:04:52","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-10 16:04:53","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-10 16:04:53","message":"App Address = localhost:7718"}
+{"level":"info","time":"2023-07-10 16:05:18","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 16:05:18","message":"=== New Request ==="}
+{"level":"error","error":"invalid document length","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 16:05:23"}
+{"level":"info","time":"2023-07-10 16:05:28","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 16:05:28","message":"=== New Request ==="}
+{"level":"error","error":"invalid document length","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 16:05:34"}
+{"level":"info","time":"2023-07-10 16:05:40","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 16:05:40","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"a1b2c3d4e5","Data":[{"Key":"account_id","Value":"1"},{"Key":"data","Value":"str"},{"Key":"document_id","Value":"1"}]},"time":"2023-07-10 16:05:43"}
+{"level":"error","error":"error decoding key account_id: cannot decode string into an integer type","function":"RetrieveProfilePicture","message":{"DocumentId":"","AccountId":0,"File":null},"time":"2023-07-10 16:05:52"}
+{"level":"error","error":"error decoding key account_id: cannot decode string into an integer type","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 16:05:52"}
+{"level":"info","time":"2023-07-10 16:07:37","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 16:07:37","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"a1b2c3d4e5","Data":[{"Key":"account_id","Value":"1"},{"Key":"data","Value":"str"},{"Key":"document_id","Value":"1"}]},"time":"2023-07-10 16:07:55"}
+{"level":"error","error":"error decoding key account_id: cannot decode string into an integer type","function":"RetrieveProfilePicture","message":{"DocumentId":"","AccountId":0,"File":null},"time":"2023-07-10 16:08:23"}
+{"level":"error","error":"error decoding key account_id: cannot decode string into an integer type","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 16:08:23"}
+{"level":"info","time":"2023-07-10 16:08:32","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 16:08:32","message":"=== New Request ==="}
+{"level":"error","error":"invalid document length","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 16:09:26"}
+{"level":"info","time":"2023-07-10 16:09:48","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 16:09:48","message":"=== New Request ==="}
+{"level":"error","error":"invalid document length","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 16:09:53"}
+{"level":"info","time":"2023-07-10 16:10:29","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 16:10:29","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"a1b2c3d4e5","Data":[{"Key":"document_id","Value":"1"},{"Key":"account_id","Value":"1"},{"Key":"data","Value":"str"}]},"time":"2023-07-10 16:10:33"}
+{"level":"error","error":"error decoding key account_id: cannot decode string into an integer type","function":"RetrieveProfilePicture","message":{"DocumentId":"1","AccountId":0,"File":null},"time":"2023-07-10 16:11:23"}
+{"level":"error","error":"error decoding key account_id: cannot decode string into an integer type","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 16:11:23"}
+{"time":"2023-07-10 16:16:52","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-10 16:16:52","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-10 16:16:52","message":"App Address = localhost:7718"}
+{"level":"info","time":"2023-07-10 16:17:00","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 16:17:00","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"a1b2c3d4e5","Data":[{"Key":"document_id","Value":"1"},{"Key":"account_id","Value":"1"},{"Key":"data","Value":"str"}]},"time":"2023-07-10 16:17:04"}
+{"level":"error","error":"error decoding key account_id: cannot decode string into an integer type","function":"RetrieveProfilePicture","message":{"DocumentId":"1","AccountId":0,"File":null},"time":"2023-07-10 16:17:11"}
+{"level":"error","error":"error decoding key account_id: cannot decode string into an integer type","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 16:17:11"}
+{"level":"info","time":"2023-07-10 16:17:33","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 16:17:33","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"a1b2c3d4e5","Data":[{"Key":"document_id","Value":"1"},{"Key":"account_id","Value":"1"},{"Key":"data","Value":"str"}]},"time":"2023-07-10 16:17:41"}
+{"level":"error","error":"error decoding key account_id: cannot decode string into an integer type","function":"RetrieveProfilePicture","message":{"DocumentId":"1","AccountId":0,"File":null},"time":"2023-07-10 16:18:20"}
+{"level":"error","error":"error decoding key account_id: cannot decode string into an integer type","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 16:18:20"}
+{"time":"2023-07-10 16:21:35","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-10 16:21:35","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-10 16:21:35","message":"App Address = localhost:7718"}
+{"level":"info","time":"2023-07-10 16:21:39","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 16:21:39","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"a1b2c3d4e5","Data":[{"Key":"document_id","Value":"1"},{"Key":"account_id","Value":"1"},{"Key":"data","Value":"str"}]},"time":"2023-07-10 16:21:39"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePictureById","message":{"_id":"1"},"time":"2023-07-10 16:21:44"}
+{"level":"error","error":"error call usecase","function":"RetrieveProfilePictureById","message":{"DocumentId":"1","AccountId":0,"Data":null},"time":"2023-07-10 16:21:44"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":{"DocumentId":"1","AccountId":"1","File":"c3Ry"},"time":"2023-07-10 16:21:44"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 16:21:44"}
+{"level":"info","time":"2023-07-10 16:22:27","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 16:22:27","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"a1b2c3d4e5","Data":[{"Key":"document_id","Value":"1"},{"Key":"account_id","Value":"1"},{"Key":"data","Value":"str"}]},"time":"2023-07-10 16:22:27"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePictureById","message":{"_id":"1"},"time":"2023-07-10 16:23:30"}
+{"level":"error","error":"error call usecase","function":"RetrieveProfilePictureById","message":{"DocumentId":"1","AccountId":0,"Data":null},"time":"2023-07-10 16:23:30"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":{"DocumentId":"1","AccountId":"1","File":"c3Ry"},"time":"2023-07-10 16:23:30"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 16:23:30"}
+{"time":"2023-07-10 16:24:35","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-10 16:24:36","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-10 16:24:36","message":"App Address = localhost:7718"}
+{"level":"info","time":"2023-07-10 16:24:38","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 16:24:38","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"a1b2c3d4e5","Data":[{"Key":"document_id","Value":"1"},{"Key":"account_id","Value":"1"},{"Key":"data","Value":"str"}]},"time":"2023-07-10 16:24:38"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePictureById","message":"","time":"2023-07-10 16:24:44"}
+{"level":"error","error":"error call usecase","function":"RetrieveProfilePictureById","message":{"DocumentId":"1","AccountId":0,"Data":null},"time":"2023-07-10 16:24:44"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":{"DocumentId":"1","AccountId":"1","File":"c3Ry"},"time":"2023-07-10 16:24:44"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 16:24:44"}
+{"level":"info","time":"2023-07-10 16:24:59","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 16:24:59","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"a1b2c3d4e5","Data":[{"Key":"document_id","Value":"1"},{"Key":"account_id","Value":"1"},{"Key":"data","Value":"str"}]},"time":"2023-07-10 16:24:59"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePictureById","message":"","time":"2023-07-10 16:25:54"}
+{"level":"error","error":"error call usecase","function":"RetrieveProfilePictureById","message":{"DocumentId":"1","AccountId":0,"Data":null},"time":"2023-07-10 16:25:54"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":{"DocumentId":"1","AccountId":"1","File":"c3Ry"},"time":"2023-07-10 16:25:54"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":"","time":"2023-07-10 16:25:54"}
+{"time":"2023-07-10 16:27:55","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-10 16:27:55","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-10 16:27:55","message":"App Address = localhost:7718"}
+{"level":"info","time":"2023-07-10 16:30:34","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 16:30:34","message":"=== New Request ==="}
+{"level":"error","error":"WriteBinaryWithSubtype can only write while positioned on a Element or Value but is positioned on a TopLevel","function":"StoreProfilePicture","message":"","time":"2023-07-10 16:30:34"}
+{"level":"info","time":"2023-07-10 16:31:14","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 16:31:14","message":"=== New Request ==="}
+{"level":"error","error":"WriteBinaryWithSubtype can only write while positioned on a Element or Value but is positioned on a TopLevel","function":"StoreProfilePicture","message":"","time":"2023-07-10 16:31:24"}
+{"time":"2023-07-10 16:32:32","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-10 16:32:33","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-10 16:32:33","message":"App Address = localhost:7718"}
+{"level":"info","time":"2023-07-10 16:33:18","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-10 16:33:18","message":"=== New Request ==="}
+{"level":"debug","function":"StoreProfilePicture","message":{"RequestId":"a1b2c3d4e5","Data":[{"Key":"document_id","Value":"1"},{"Key":"account_id","Value":"1"},{"Key":"data","Value":"str"}]},"time":"2023-07-10 16:33:25"}
