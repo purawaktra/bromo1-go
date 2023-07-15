@@ -1,0 +1,151 @@
+{"time":"2023-07-14 13:43:34","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-14 13:43:35","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-14 13:43:35","message":"App Address = localhost:7718"}
+{"time":"2023-07-14 13:53:22","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-14 13:53:23","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-14 13:53:23","message":"App Address = localhost:7718"}
+{"time":"2023-07-14 13:54:16","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-14 13:54:17","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-14 13:54:17","message":"App Address = localhost:7718"}
+{"time":"2023-07-14 13:54:50","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-14 13:54:51","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-14 13:54:51","message":"App Address = localhost:7718"}
+{"time":"2023-07-14 13:55:39","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-14 13:55:40","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-14 13:55:40","message":"App Address = localhost:7718"}
+{"time":"2023-07-14 13:56:03","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-14 13:56:04","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-14 13:56:04","message":"App Address = localhost:7718"}
+{"time":"2023-07-14 13:58:31","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-14 13:58:32","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-14 13:58:32","message":"App Address = localhost:7718"}
+{"level":"info","time":"2023-07-14 13:58:34","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 13:58:34","message":"=== New Request ==="}
+{"level":"debug","function":"RemoveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64ad09596b41a18e294c8817","AccountId":""},"time":"2023-07-14 13:58:34"}
+{"level":"info","time":"2023-07-14 13:59:17","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 13:59:17","message":"=== New Request ==="}
+{"level":"debug","function":"RemoveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64ad09596b41a18e294c8817","AccountId":""},"time":"2023-07-14 13:59:17"}
+{"time":"2023-07-14 14:01:20","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-14 14:01:21","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-14 14:01:21","message":"App Address = localhost:7718"}
+{"level":"warn","function":"CheckBasicAuth","message":"Basic auth not set","time":"2023-07-14 14:01:39"}
+{"level":"info","time":"2023-07-14 14:01:46","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 14:01:46","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64ad8aa339996eeefc5c39c9","AccountId":""},"time":"2023-07-14 14:01:46"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePictureByDocumentId","message":{"_id":"64ad8aa339996eeefc5c39c9"},"time":"2023-07-14 14:01:46"}
+{"level":"error","error":"error call usecase","function":"RetrieveProfilePictureByDocumentId","message":{"DocumentId":"64ad8aa339996eeefc5c39c9","AccountId":0,"Data":null},"time":"2023-07-14 14:01:46"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64ad8aa339996eeefc5c39c9","AccountId":""},"time":"2023-07-14 14:01:46"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":"","time":"2023-07-14 14:01:46"}
+{"level":"info","time":"2023-07-14 14:02:49","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 14:02:49","message":"=== New Request ==="}
+{"level":"debug","function":"StoreProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","AccountId":"2"},"time":"2023-07-14 14:02:49"}
+{"level":"info","time":"2023-07-14 14:03:17","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 14:03:17","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64b0f319b704ec724f6512b8","AccountId":""},"time":"2023-07-14 14:03:17"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePictureByDocumentId","message":{"_id":"64b0f319b704ec724f6512b8"},"time":"2023-07-14 14:03:17"}
+{"level":"error","error":"error call usecase","function":"RetrieveProfilePictureByDocumentId","message":{"DocumentId":"64b0f319b704ec724f6512b8","AccountId":0,"Data":null},"time":"2023-07-14 14:03:17"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64b0f319b704ec724f6512b8","AccountId":""},"time":"2023-07-14 14:03:17"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":"","time":"2023-07-14 14:03:17"}
+{"time":"2023-07-14 14:04:19","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-14 14:04:19","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-14 14:04:19","message":"App Address = localhost:7718"}
+{"level":"info","time":"2023-07-14 14:04:22","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 14:04:22","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64b0f319b704ec724f6512b8","AccountId":""},"time":"2023-07-14 14:04:22"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePictureByDocumentId","message":{"_id":"64b0f319b704ec724f6512b8"},"time":"2023-07-14 14:05:07"}
+{"level":"error","error":"error call usecase","function":"RetrieveProfilePictureByDocumentId","message":{"DocumentId":"64b0f319b704ec724f6512b8","AccountId":0,"Data":null},"time":"2023-07-14 14:05:07"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64b0f319b704ec724f6512b8","AccountId":""},"time":"2023-07-14 14:05:07"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":"","time":"2023-07-14 14:05:07"}
+{"level":"info","time":"2023-07-14 14:05:21","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 14:05:21","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64b0f319b704ec724f6512b8","AccountId":""},"time":"2023-07-14 14:05:21"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePictureByDocumentId","message":{"_id":"64b0f319b704ec724f6512b8"},"time":"2023-07-14 14:06:24"}
+{"level":"error","error":"error call usecase","function":"RetrieveProfilePictureByDocumentId","message":{"DocumentId":"64b0f319b704ec724f6512b8","AccountId":0,"Data":null},"time":"2023-07-14 14:06:24"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64b0f319b704ec724f6512b8","AccountId":""},"time":"2023-07-14 14:06:24"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":"","time":"2023-07-14 14:06:24"}
+{"time":"2023-07-14 14:08:34","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-14 14:08:34","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-14 14:08:34","message":"App Address = localhost:7718"}
+{"level":"info","time":"2023-07-14 14:08:41","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 14:08:41","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64b0f319b704ec724f6512b8","AccountId":""},"time":"2023-07-14 14:08:41"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePictureByDocumentId","message":[{"Key":"_id","Value":"64b0f319b704ec724f6512b8"}],"time":"2023-07-14 14:08:46"}
+{"level":"error","error":"error call usecase","function":"RetrieveProfilePictureByDocumentId","message":{"DocumentId":"64b0f319b704ec724f6512b8","AccountId":0,"Data":null},"time":"2023-07-14 14:08:46"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64b0f319b704ec724f6512b8","AccountId":""},"time":"2023-07-14 14:08:46"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":"","time":"2023-07-14 14:08:46"}
+{"level":"info","time":"2023-07-14 14:08:53","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 14:08:53","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64b0f319b704ec724f6512b8","AccountId":""},"time":"2023-07-14 14:08:53"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePictureByDocumentId","message":[{"Key":"_id","Value":"64b0f319b704ec724f6512b8"}],"time":"2023-07-14 14:09:23"}
+{"level":"error","error":"error call usecase","function":"RetrieveProfilePictureByDocumentId","message":{"DocumentId":"64b0f319b704ec724f6512b8","AccountId":0,"Data":null},"time":"2023-07-14 14:09:23"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64b0f319b704ec724f6512b8","AccountId":""},"time":"2023-07-14 14:09:23"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":"","time":"2023-07-14 14:09:23"}
+{"level":"info","time":"2023-07-14 14:09:58","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 14:09:58","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64b0f319b704ec724f6512b8","AccountId":""},"time":"2023-07-14 14:09:58"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePictureByDocumentId","message":[{"Key":"_id","Value":"64b0f319b704ec724f6512b8"}],"time":"2023-07-14 14:11:00"}
+{"level":"error","error":"error call usecase","function":"RetrieveProfilePictureByDocumentId","message":{"DocumentId":"64b0f319b704ec724f6512b8","AccountId":0,"Data":null},"time":"2023-07-14 14:11:00"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64b0f319b704ec724f6512b8","AccountId":""},"time":"2023-07-14 14:11:00"}
+{"level":"error","error":"mongo: no documents in result","function":"RetrieveProfilePicture","message":"","time":"2023-07-14 14:11:00"}
+{"time":"2023-07-14 14:14:11","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-14 14:14:12","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-14 14:14:12","message":"App Address = localhost:7718"}
+{"level":"info","time":"2023-07-14 14:14:15","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 14:14:15","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64b0f319b704ec724f6512b8","AccountId":""},"time":"2023-07-14 14:14:15"}
+{"time":"2023-07-14 14:15:33","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-14 14:15:34","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-14 14:15:34","message":"App Address = localhost:7718"}
+{"level":"warn","function":"CheckBasicAuth","message":"Basic auth not set","time":"2023-07-14 14:15:52"}
+{"level":"info","time":"2023-07-14 14:16:00","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 14:16:00","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64b0f319b704ec724f6512b8","AccountId":""},"time":"2023-07-14 14:16:00"}
+{"level":"info","time":"2023-07-14 14:16:18","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 14:16:18","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64ad8d6f39996eeefc5c39cd","AccountId":""},"time":"2023-07-14 14:16:18"}
+{"level":"info","time":"2023-07-14 14:16:25","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 14:16:25","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64b0f319b704ec724f6512b8","AccountId":""},"time":"2023-07-14 14:16:25"}
+{"level":"info","time":"2023-07-14 14:17:10","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 14:17:10","message":"=== New Request ==="}
+{"level":"debug","function":"StoreProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","AccountId":"1"},"time":"2023-07-14 14:17:10"}
+{"level":"info","time":"2023-07-14 14:17:30","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 14:17:30","message":"=== New Request ==="}
+{"level":"debug","function":"RetrieveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64b0f676f2ae3652002155db","AccountId":""},"time":"2023-07-14 14:17:30"}
+{"level":"info","time":"2023-07-14 14:20:32","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 14:20:32","message":"=== New Request ==="}
+{"level":"debug","function":"RemoveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64b0f676f2ae3652002155db","AccountId":""},"time":"2023-07-14 14:20:32"}
+{"time":"2023-07-14 14:21:54","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-14 14:21:54","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-14 14:21:54","message":"App Address = localhost:7718"}
+{"level":"info","time":"2023-07-14 14:21:58","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 14:21:58","message":"=== New Request ==="}
+{"level":"debug","function":"RemoveProfilePicture","message":{"RequestId":"ded4c931-6983-4a53-be63-ccc3359cb694","DocumentId":"64b0f676f2ae3652002155db","AccountId":""},"time":"2023-07-14 14:21:58"}
+{"time":"2023-07-14 16:01:55","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-14 16:01:55","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-14 16:01:55","message":"App Address = localhost:7718"}
+{"level":"warn","function":"CheckBasicAuth","message":"Basic auth not set","time":"2023-07-14 16:20:57"}
+{"level":"info","time":"2023-07-14 16:21:06","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 16:21:06","message":"=== New Request ==="}
+{"level":"debug","function":"StoreProfilePicture","message":{"RequestId":"7b38c96f-e456-43ce-a649-a4ff94915c64","AccountId":"1"},"time":"2023-07-14 16:21:06"}
+{"level":"info","time":"2023-07-14 16:22:08","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 16:22:08","message":"=== New Request ==="}
+{"level":"debug","function":"StoreProfilePicture","message":{"RequestId":"7b38c96f-e456-43ce-a649-a4ff94915c64","AccountId":"1"},"time":"2023-07-14 16:22:08"}
+{"time":"2023-07-14 16:22:27","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-14 16:22:28","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-14 16:22:28","message":"App Address = localhost:7718"}
+{"level":"info","time":"2023-07-14 16:22:31","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 16:22:31","message":"=== New Request ==="}
+{"level":"debug","function":"StoreProfilePicture","message":{"RequestId":"7b38c96f-e456-43ce-a649-a4ff94915c64","AccountId":"1"},"time":"2023-07-14 16:22:31"}
+{"time":"2023-07-14 16:23:42","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-14 16:23:43","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-14 16:23:43","message":"App Address = localhost:7718"}
+{"level":"info","time":"2023-07-14 16:23:46","message":"Basic auth successful"}
+{"level":"info","time":"2023-07-14 16:23:46","message":"=== New Request ==="}
+{"level":"debug","function":"StoreProfilePicture","message":{"RequestId":"7b38c96f-e456-43ce-a649-a4ff94915c64","AccountId":"1"},"time":"2023-07-14 16:23:46"}
+{"level":"error","error":"size data exceeding limit","function":"StoreProfilePicture","message":"Size exceeding 1 megabytes, size : 2596604","time":"2023-07-14 16:23:56"}
+{"level":"error","error":"size data exceeding limit","function":"StoreProfilePicture","message":{"RequestId":"7b38c96f-e456-43ce-a649-a4ff94915c64","DocumentId":"","AccountId":"1"},"time":"2023-07-14 16:23:56"}
+{"level":"error","error":"size data exceeding limit","function":"StoreProfilePicture","message":"","time":"2023-07-14 16:23:56"}
+{"time":"2023-07-14 16:25:16","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-14 16:25:16","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-14 16:25:16","message":"App Address = localhost:7718"}

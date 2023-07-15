@@ -1,8 +1,19 @@
 package dto
 
 type Request struct {
-	RequestId string `bson:"request_id"`
-	Data      any    `bson:"data"`
+	RequestId  string
+	DocumentId string
+	AccountId  string
+}
+
+type Header struct {
+	RequestId  string `header:"request_id"`
+	DocumentId string `header:"document_id"`
+}
+
+type HeaderStorePhotoProfile struct {
+	RequestId string `header:"request_id"`
+	AccountId string `header:"account_id"`
 }
 
 type RequestProfilePicture struct {

@@ -19,7 +19,7 @@ func CreateBromo1Router(engine *gin.Engine, rh Bromo1RequestHandler) Bromo1Route
 
 func (r Bromo1Router) Init(path string) {
 	pathGroup := r.engine.Group(path, utils.CheckBasicAuth)
-	pathGroup.POST("/select/profile_picture", r.rh.RetrieveProfilePicture)
+	pathGroup.GET("/select/profile_picture", r.rh.RetrieveProfilePicture)
 	pathGroup.POST("/insert/profile_picture", r.rh.StoreProfilePicture)
-	pathGroup.POST("/delete/porifle_picture", r.rh.RemoveProfilePicture)
+	pathGroup.DELETE("/delete/profile_picture", r.rh.RemoveProfilePicture)
 }

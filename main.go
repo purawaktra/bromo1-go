@@ -45,7 +45,7 @@ func main() {
 
 	// init routing to swagger
 	swaggerRouter := utils.CreateSwaggerRouter(engine)
-	swaggerRouter.Init("/bromo1/api/v1/swagger")
+	swaggerRouter.InitRouter("/bromo1/api/v1/swagger")
 
 	// start http api engine
 	err = engine.Run(fmt.Sprintf("%s:%s", utils.AppHost, utils.AppPort))

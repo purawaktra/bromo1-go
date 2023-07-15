@@ -23,7 +23,7 @@ func CreateMongoDb(dsn string) (*mongo.Client, error) {
 
 	// check if instance able to make connection
 	var result bson.M
-	err = client.Database("bromo1").RunCommand(context.TODO(), bson.D{{"ping", 1}}).Decode(&result)
+	err = client.Database(MongoDBDatabase).RunCommand(context.TODO(), bson.D{{"ping", 1}}).Decode(&result)
 	if err != nil {
 		Fatal(err, "CreateMongoDb", "failed to ping mongodb")
 		return nil, err

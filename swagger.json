@@ -20,7 +20,7 @@
   ],
   "paths": {
     "/select/profile_picture": {
-      "post": {
+      "get": {
         "tags": [
           "photo_profile"
         ],
@@ -33,28 +33,31 @@
         "parameters": [
           {
             "$ref": "#/components/parameters/xClientId"
+          },
+          {
+            "$ref": "#/components/parameters/RequestId"
+          },
+          {
+            "$ref": "#/components/parameters/DocumentId"
           }
         ],
-        "requestBody": {
-          "$ref": "#/components/requestBodies/PhotoProfile"
-        },
         "responses": {
           "200": {
             "description": "RetrieveProfilePicture success, with given request",
             "content": {
               "application/bson": {
                 "schema": {
-                  "$ref": "#/components/schemas/ResponseSuccess"
+                  "$ref": "#/components/schemas/Response"
                 }
               }
             }
           },
           "400": {
-            "description": "Check request, body not comply with request rules",
+            "description": "Check request, header not comply with request rules",
             "content": {
               "application/bson": {
                 "schema": {
-                  "$ref": "#/components/schemas/ResponseError"
+                  "$ref": "#/components/schemas/Response"
                 }
               }
             }
@@ -67,7 +70,7 @@
             "content": {
               "application/bson": {
                 "schema": {
-                  "$ref": "#/components/schemas/ResponseError"
+                  "$ref": "#/components/schemas/Response"
                 }
               }
             }
@@ -81,7 +84,7 @@
           "photo_profile"
         ],
         "summary": "Store photo profile",
-        "description": "Return only document profile",
+        "description": "Make sure that the file is not exceeding 1MB, will return 500 Internal Error if size exceeding",
         "operationId": "StoreProfilePicture",
         "security": [
           {"basicAuth":  []}
@@ -89,6 +92,12 @@
         "parameters": [
           {
             "$ref": "#/components/parameters/xClientId"
+          },
+          {
+            "$ref": "#/components/parameters/RequestId"
+          },
+          {
+            "$ref": "#/components/parameters/AccountId"
           }
         ],
         "requestBody": {
@@ -100,17 +109,17 @@
             "content": {
               "application/bson": {
                 "schema": {
-                  "$ref": "#/components/schemas/ResponseSuccess"
+                  "$ref": "#/components/schemas/Response"
                 }
               }
             }
           },
           "400": {
-            "description": "Check request, body not comply with request rules",
+            "description": "Check request, header not comply with request rules",
             "content": {
               "application/bson": {
                 "schema": {
-                  "$ref": "#/components/schemas/ResponseError"
+                  "$ref": "#/components/schemas/Response"
                 }
               }
             }
@@ -123,7 +132,7 @@
             "content": {
               "application/bson": {
                 "schema": {
-                  "$ref": "#/components/schemas/ResponseError"
+                  "$ref": "#/components/schemas/Response"
                 }
               }
             }
@@ -132,7 +141,7 @@
       }
     },
     "/delete/profile_picture": {
-      "post": {
+      "delete": {
         "tags": [
           "photo_profile"
         ],
@@ -145,28 +154,31 @@
         "parameters": [
           {
             "$ref": "#/components/parameters/xClientId"
+          },
+          {
+            "$ref": "#/components/parameters/RequestId"
+          },
+          {
+            "$ref": "#/components/parameters/DocumentId"
           }
         ],
-        "requestBody": {
-          "$ref": "#/components/requestBodies/PhotoProfile"
-        },
         "responses": {
           "200": {
             "description": "RemoveProfilePicture success, with given request",
             "content": {
               "application/bson": {
                 "schema": {
-                  "$ref": "#/components/schemas/ResponseSuccess"
+                  "$ref": "#/components/schemas/Response"
                 }
               }
             }
           },
           "400": {
-            "description": "Check request, body not comply with request rules",
+            "description": "Check request, header not comply with request rules",
             "content": {
               "application/bson": {
                 "schema": {
-                  "$ref": "#/components/schemas/ResponseError"
+                  "$ref": "#/components/schemas/Response"
                 }
               }
             }
@@ -179,7 +191,7 @@
             "content": {
               "application/bson": {
                 "schema": {
-                  "$ref": "#/components/schemas/ResponseError"
+                  "$ref": "#/components/schemas/Response"
                 }
               }
             }
@@ -198,7 +210,7 @@
       "PhotoProfile": {
         "required": true,
         "content": {
-          "application/bson": {
+          "image/*": {
             "schema": {
               "type": "string",
               "format": "binary"
@@ -239,7 +251,7 @@
           }
         }
       },
-      "ResponseSuccess": {
+      "Response": {
         "type": "object",
         "additionalProperties": false,
         "properties": {
@@ -265,41 +277,6 @@
             "type": "string",
             "maxLength": 256,
             "pattern": "^.$"
-          },
-          "data": {
-            "type": "object",
-            "additionalProperties": true,
-            "maxProperties": 64
-          }
-        }
-      },
-      "ResponseError": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "response_id": {
-            "type": "string",
-            "maxLength": 36,
-            "pattern": "[A-Za-z0-9]{8}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{12}"
-
-          },
-          "request_id": {
-            "type": "string",
-            "maxLength": 36,
-            "pattern": "[A-Za-z0-9]{8}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{12}"
-          },
-          "success": {
-            "type": "boolean"
-          },
-          "response_time": {
-            "type": "string",
-            "maxLength": 64,
-            "pattern": "^[0-9]$"
-          },
-          "error": {
-            "type": "string",
-            "maxLength": 256,
-            "pattern": "^.$"
           }
         }
       }
@@ -320,6 +297,37 @@
           "type": "string",
           "maxLength": 32,
           "pattern": "[A-Za-z0-9]{32}"
+        }
+      },
+      "RequestId": {
+        "name": "request_id",
+        "in": "header",
+        "description": "Request id that accompanies, what else request",
+        "required": true,
+        "schema": {
+          "type": "string",
+          "maxLength": 36,
+          "pattern": "[A-Za-z0-9]{8}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{12}"
+        }
+      },
+      "DocumentId": {
+        "name": "document_id",
+        "in": "header",
+        "description": "id that generated by mongodb to store documents",
+        "required": true,
+        "schema": {
+          "type": "string",
+          "maxLength": 24,
+          "pattern": "[A-Za-z0-9]{24}"
+        }
+      },
+      "AccountId": {
+        "name": "account_id",
+        "in": "header",
+        "description": "unique identifier for account id",
+        "required": true,
+        "schema": {
+          "type": "integer"
         }
       }
     }

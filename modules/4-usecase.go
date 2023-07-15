@@ -6,7 +6,6 @@ import (
 	"github.com/purawaktra/bromo1-go/entities"
 	"github.com/purawaktra/bromo1-go/utils"
 	"strconv"
-	"unsafe"
 )
 
 type Bromo1Usecase struct {
@@ -25,13 +24,7 @@ type Bromo1UsecaseInterface interface {
 	RemoveProfilePictureByDocumentId(documentId string) error
 }
 
-func (uc Bromo1Usecase) RetrieveProfilePictureById(documentId string, accountId int) (ProfilePicture, error) {
-	// create check input on id
-	if accountId < 1 {
-		utils.Error(errors.New("accountId can not be zero or negative"), "RetrieveProfilePictureById", accountId)
-		return ProfilePicture{}, errors.New("accountId can not be zero or negative")
-	}
-
+func (uc Bromo1Usecase) RetrieveProfilePictureByDocumentId(documentId string) (ProfilePicture, error) {
 	// convert input to entity
 	doc := entities.ProfilePicture{DocumentId: documentId}
 
@@ -40,13 +33,7 @@ func (uc Bromo1Usecase) RetrieveProfilePictureById(documentId string, accountId 
 
 	// check for error on call repo
 	if err != nil {
-		utils.Error(errors.New("error call usecase"), "RetrieveProfilePictureById", doc)
-		return ProfilePicture{}, err
-	}
-
-	// check if account id correct with a document retrieved
-	if uint(accountId) != docs.AccountId {
-		utils.Error(errors.New("accountId not match"), "RetrieveProfilePictureById", doc)
+		utils.Error(errors.New("error call usecase"), "RetrieveProfilePictureByDocumentId", doc)
 		return ProfilePicture{}, err
 	}
 
@@ -68,10 +55,8 @@ func (uc Bromo1Usecase) StoreProfilePicture(accountId int, data []byte) (Profile
 		return ProfilePicture{}, errors.New("accountId can not be zero or negative")
 	}
 
-	// check the size of data
-	size := unsafe.Sizeof(data)
-
-	// return err if data is more than 1 megabyte
+	// check the size of data and check err if data is more than 1 megabyte
+	size := len(data)
 	if size > 1048576 {
 		utils.Error(errors.New("size data exceeding limit"), "StoreProfilePicture", fmt.Sprintf("Size exceeding 1 megabytes, size : %d", size))
 		return ProfilePicture{}, errors.New("size data exceeding limit")

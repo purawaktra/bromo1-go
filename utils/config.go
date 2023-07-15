@@ -77,10 +77,10 @@ func InitConfig() {
 		AppAuthPassword = os.Getenv("APP_AUTH_PASSWORD")
 
 		// get variable for db
-		MongoDBHost = os.Getenv("MYSQL_HOST")
-		MongoDBPort = os.Getenv("MYSQL_PORT")
-		MongoDBDatabase = os.Getenv("MYSQL_SCHEME")
-		MongoDBUser = os.Getenv("MYSQL_USER")
-		MongoDBPassword = os.Getenv("MYSQL_PASSWORD")
+		MongoDBHost = os.Getenv("MONGODB_HOST")
+		MongoDBPort = os.Getenv("MONGODB_PORT")
+		MongoDBDatabase = os.Getenv("MONGODB_DATABASE")
+		MongoDBUser = os.Getenv("MONGODB_USER")
+		MongoDBPassword = os.Getenv("MONGODB_PASSWORD")
 	}
 }

@@ -6,6 +6,7 @@ import (
 	"github.com/purawaktra/bromo1-go/entities"
 	"github.com/purawaktra/bromo1-go/utils"
 	"go.mongodb.org/mongo-driver/bson"
+	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
@@ -28,15 +29,20 @@ type Bromo1RepoInterface interface {
 func (br Bromo1Repo) RetrieveProfilePictureByDocumentId(data entities.ProfilePicture) (entities.ProfilePicture, error) {
 	// set up config
 	coll := br.db.Database(utils.MongoDBDatabase).Collection(utils.CollectionProfilePicture)
-	filter := bson.M{"_id": data.DocumentId}
+	id, err := primitive.ObjectIDFromHex(data.DocumentId)
+	if err != nil {
+		utils.Error(err, "RetrieveProfilePictureByDocumentId", data.DocumentId)
+		return entities.ProfilePicture{}, err
+	}
+	filter := bson.M{"_id": id}
 
 	// get document from mongo db
 	doc := coll.FindOne(context.TODO(), filter)
 
 	// check if err
-	err := doc.Err()
+	err = doc.Err()
 	if err != nil {
-		utils.Error(err, "RetrieveProfilePictureById", filter)
+		utils.Error(err, "RetrieveProfilePictureByDocumentId", filter)
 		return entities.ProfilePicture{}, err
 	}
 
@@ -46,7 +52,7 @@ func (br Bromo1Repo) RetrieveProfilePictureByDocumentId(data entities.ProfilePic
 
 	// check if err parse document
 	if err != nil {
-		utils.Error(err, "RetrieveProfilePictureById", "")
+		utils.Error(err, "RetrieveProfilePictureByDocumentId", "")
 		return entities.ProfilePicture{}, err
 	}
 
@@ -84,7 +90,12 @@ func (br Bromo1Repo) StoreProfilePicture(data entities.ProfilePicture) (entities
 func (br Bromo1Repo) RemoveProfilePictureByDocumentId(data entities.ProfilePicture) error {
 	// set up config
 	coll := br.db.Database(utils.MongoDBDatabase).Collection(utils.CollectionProfilePicture)
-	filter := bson.M{"_id": data.DocumentId}
+	id, err := primitive.ObjectIDFromHex(data.DocumentId)
+	if err != nil {
+		utils.Error(err, "RetrieveProfilePictureByDocumentId", data.DocumentId)
+		return err
+	}
+	filter := bson.M{"_id": id}
 
 	// delete document on mongo db
 	result, err := coll.DeleteOne(context.TODO(), filter)
@@ -97,7 +108,7 @@ func (br Bromo1Repo) RemoveProfilePictureByDocumentId(data entities.ProfilePictu
 
 	// warn if deleted two
 	if result.DeletedCount > 1 {
-		utils.Warn("RemoveProfilePictureByDocumentId", "deletd more than one document")
+		utils.Warn("RemoveProfilePictureByDocumentId", "deleted more than one document")
 	}
 
 	// create return
