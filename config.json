@@ -2,7 +2,7 @@
   "app": {
     "name": "bromo1",
     "host": "localhost",
-    "port": "7718",
+    "port": "7726",
     "environment": "development",
     "log": {
       "level": "0"
