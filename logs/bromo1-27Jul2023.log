@@ -1,0 +1,14 @@
+{"time":"2023-07-27 18:12:01","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"level":"fatal","error":"connection() error occurred during connection handshake: auth error: sasl conversation error: unable to authenticate using mechanism \"SCRAM-SHA-1\": (AuthenticationFailed) Authentication failed.","function":"CreateMongoDb","message":"failed to ping mongodb","time":"2023-07-27 18:12:01"}
+{"time":"2023-07-27 18:17:04","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-27 18:17:04","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-27 18:17:04","message":"App Address = localhost:7726"}
+{"time":"2023-07-27 18:26:41","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-27 18:26:41","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-27 18:26:41","message":"App Address = localhost:7726"}
+{"time":"2023-07-27 19:39:43","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-27 19:39:43","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-27 19:39:43","message":"App Address = localhost:7726"}
+{"time":"2023-07-27 19:40:31","message":"============= BROMO1 RUNTIME STARTED ============="}
+{"time":"2023-07-27 19:40:31","message":"============= BROMO1 ENGINE STARTING ============="}
+{"time":"2023-07-27 19:40:31","message":"App Address = localhost:7726"}

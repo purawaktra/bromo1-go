@@ -7,8 +7,8 @@ type Request struct {
 }
 
 type Header struct {
-	RequestId  string `header:"request_id"`
-	DocumentId string `header:"document_id"`
+	RequestId  string `header:"request_id" binding:"required"`
+	DocumentId string `header:"document_id" binding:"required"`
 }
 
 type HeaderStorePhotoProfile struct {

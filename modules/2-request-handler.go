@@ -34,14 +34,14 @@ func (rh Bromo1RequestHandler) RetrieveProfilePicture(c *gin.Context) {
 	err := c.BindHeader(&header)
 	if err != nil {
 		utils.Error(err, "RetrieveProfilePicture", "")
-		c.Data(http.StatusBadRequest, "", nil)
+		c.Data(http.StatusBadRequest, "", []byte("fail to parse header"))
 		return
 	}
 
 	// check for request id
 	if functions.IsValidUUID(header.RequestId) {
 		utils.Error(err, "RetrieveProfilePicture", "")
-		c.Data(http.StatusBadRequest, "", nil)
+		c.Data(http.StatusBadRequest, "", []byte("uuid is not valid"))
 		return
 	}
 
